@@ -29,7 +29,21 @@
 
     <style>
         /* ===== COLORS & ROOT VARIABLES ===== */
+        
         :root{
+        /* Significa arrel d'angles, es una paraula que s'utilitza molt en el món informàtic, per exemple el linux, que es un sistema operatiu
+        altternatiu i millor que el windows. En aquest cas root significa l'element significa el document arrel del html, aquest és el propi html.
+        Antigament es deia html "{propietat:valor}", però es fa servir "root{--variable:valor}" perqueté una propietat més alta que html.
+        Perque tot els estils que estiguin dintre de root afectaran a tota la pagina web html. Perque "--variable" és una variable CSS global,
+        que puc utilitzar vàries vegades. Aquestes variables s'anomenen variables CSS personalitzades, o custom propieties. PER EXEMPLE LA VARIABLE
+        primary és un color que surt diverses vagades, per exemple en botons d'aquest mateix color en el fons, en els titols, en
+        que es la capçelera principal. Això permet tenir el codi més organitzant, perquè el canvio una vegada en el root i es canvia e diferents
+        llocs a la vegada. També permet codis més choerents visualments, ja que és el mateix color, i és més fàcil d'ampliar, com el mode fosc i clar, 
+        El primary és el color principal de la web, en aquest cas són tons foscos per capçeleres i fons.
+        El secondary és el color secundari i s'aplica en enllaços i coses que li vols donar importància.
+        El accent dona encara més importància, per altres o botons importants.
+        Light 
+    
             --primary: #2c3e50;
             --secondary: #3498db;
             --accent: #e74c3c;
@@ -46,6 +60,7 @@
 
         /* ===== BASIC LAYOUT ===== */
         *{box-sizing:border-box}
+        /* L'esterisc és un selectro universal, per exemple si yo vull buscar un documnet i no m'enrecordo del seu nom poso *.docx */
         html,body{
             height:100%;
             margin:0;
