@@ -66,23 +66,34 @@
 
         /* ===== BASIC LAYOUT ===== */
         *{box-sizing:border-box}
-        /* L'esterisc és un selectro universal, per exemple si yo vull buscar un documnet i no m'enrecordo del seu nom poso *.docx */
+        /* L'asterisc és un selectro universal, per exemple si yo vull buscar un documnet i si poso *.js- buscaria tots els 
+        documents que tenen js (javascripr), *.docx busca tots els documents wod, en aquest cas, posr un asterisc a fecta a totes les estiquetes html
+        La propietat box-sizing controla com es calcla l'amplada i l'alçada d'un element, concretament se el padding i er borden s'inclouen dins 
+        de les mides o no. En el cas border-bos posés content-box l'amplada total sería més gran i hauriem de sumar el padding
+        i el border. És més fàcil per a un dienyador fer border box perquè te en compte totes les mides.*/
         html,body{
             height:100%;
             margin:0;
             padding:0;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /*És l'ordre de prioritzar cada tipus de lletra*/
             background: linear-gradient(135deg,#f5f7fa 0%, #d8e1ef 100%);
+        /*Linear-gradient fa que el color no seigui homgeni, fara un drgradat amb una transicio de color de 100% d'un i el 0% del altre 
+        fins al resultat al reves. Això es un drgradat suau perque hi ha poca diferencia de colors*/
             color:#222;
+        /*Color és el color del text*/
         }
 
         .app {
+        /*Quan hi ha un punt abans de app significa que és un identificador o ID. A la linea 305 hi ha un contenidor o divisor que tindrà un amplada
+        maxima i un marges on estaràn els resultats*/
             max-width: 1100px;
             margin: 28px auto;
             padding: 20px;
         }
 
         header {
+        /**/
             background: linear-gradient(90deg,var(--primary),#24414a);
             color: #fff;
             padding: 22px;
