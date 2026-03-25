@@ -130,9 +130,12 @@
 
   <!-- Contingut -->
   <main class="container py-5">
-       <h1 class="display-5 fw-bold mb-4">Blinking: el "Hello, world!" de l'arduino</h1>
-      <p class="lead">Pots veure una simulació de blinking amb arduino en el <a href="https://www.tinkercad.com/things/5Ec5C49xDJk-control-intensitat-led"> següent enllaç</a></p>
-      <iframe width="725" height="453" src="https://www.tinkercad.com/things/5Ec5C49xDJk-control-intensitat-led" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+       <h1 class="display-5 fw-bold mb-4">Variant la intensitat d'un led: Utilitzant pulsadors i PWM de l'arduino</h1>
+      <p class="lead"> Podem veure la simulació que hem creat una variable anomenada step que té un valor de 17 unitats perquè es divisor de 255 i fara cada 
+        vegada que pulsem un cop augmenta i l'altre botó disminueix la intensitat d'un led.
+      <p>Aixó servirà per regular el color de la llum que tindrà a veure amb l'intensitat rgb i/o el sistema de color que farem servir
+    (hsl o hlv) que es basa en la tonalitat de color HUE.</p>
+  <iframe width="725" height="453" src="https://www.tinkercad.com/embed/5Ec5C49xDJk?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
        <pre><code class="language-arduino">
          
 // C++ code
@@ -175,40 +178,4 @@ void loop()
     });
   </script>
 </body>
-</html>
-
-
-
-
-
-  
-    
-       
-      <h1>Variant la intensitat d'un led: Utilitzant pulsadors i PWM de l'arduino</h1>
-      <p>Podem veure la simulació que hem creat una variable anomenada step que té un valor de 17 unitats perquè es divisor de 255 i fara cada 
-        vegada que pulsem un cop augmenta i l'altre botó disminueix la intensitat d'un led</p>
-      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/6IKniPvL2JS?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-       <pre><code class="language-arduino">
-         
-// C++ code
-//Al principi sempre hi ha d'haver un comentari explicant que fa el codi següent.
-// El primer codi que s'ha d'executar, per asegurar que la placa es reconeguda i el port és reconegut
-//Aquest codi es blinking o parpelleig i encen o apaga el led
-
-void setup()
-{
-  pinMode(13, OUTPUT);
-}
-
-void loop()
-{
-  digitalWrite(13, HIGH);
-  delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(13, LOW);
-  delay(1000); // Wait for 1000 millisecond(s)
-}
-    
-      </pre></code>
-    </body>
-  
 </html>
